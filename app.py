@@ -5,7 +5,7 @@ import os
 # -----------------------------
 # Backend API URL from environment variable
 # -----------------------------
-API_URL = os.environ.get("API_URL", "https://taskmanager-backend.onrender.com/tasks")
+API_URL = os.environ.get("API_URL", "https://task-manager-app-f2pn.onrender.com")
 
 st.title("📋 Task Manager App")
 
@@ -80,5 +80,6 @@ try:
         st.error("⚠️ Could not fetch tasks.")
 except Exception as e:
     st.error(f"⚠️ Could not fetch tasks: {e}")
+
 
 
